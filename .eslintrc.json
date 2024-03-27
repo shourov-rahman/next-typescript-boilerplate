@@ -1,16 +1,23 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "es2021": true,
     "node": true
   },
-  "ignorePatterns": ["next.config.js", "next.config.mjs"],
+  "settings": {},
+  "ignorePatterns": [
+    "next.config.js",
+    "next.config.mjs",
+    "postcss.config.js"
+  ],
   "extends": [
     "next/core-web-vitals",
     "airbnb",
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "next"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -21,15 +28,25 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "rules": {
-    "no-console": ["off"],
-    "react/jsx-uses-react": ["off"],
-    "react/react-in-jsx-scope": ["off"],
-    "react/jsx-props-no-spreading": ["warn"],
+    "no-console": [
+      "off"
+    ],
+    "react/jsx-uses-react": [
+      "off"
+    ],
+    "react/react-in-jsx-scope": [
+      "off"
+    ],
+    "react/jsx-props-no-spreading": [
+      "warn"
+    ],
     "no-shadow": "off",
-
-    // for arrow functions
     "react/function-component-definition": [
       2,
       {
@@ -41,7 +58,10 @@
       "error",
       {
         "required": {
-          "some": ["nesting", "id"]
+          "some": [
+            "nesting",
+            "id"
+          ]
         }
       }
     ],
@@ -49,7 +69,10 @@
       "error",
       {
         "required": {
-          "some": ["nesting", "id"]
+          "some": [
+            "nesting",
+            "id"
+          ]
         }
       }
     ]
